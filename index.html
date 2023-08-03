@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles/styles.css">
+    <title>ANANDA ETT</title>
+</head>
+<body>
+        <!--Navbar------------------------------------------------------------------------------------------>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+          <a class="navbar-brand" href="#!"><img src="https://ik.imagekit.io/ehiyh7jvx/img/logo/logo_col_imagotipo.png?updatedAt=1690812562674" alt="" height="40"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link btn p-2 m-2" href="#!">SOY CANDIDATO</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn p-2 m-2" href="#!">SOY EMPRESA</a>
+              </li>
+              </ul>
+              <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link btn p-2 m-2" href="#!">Oficinas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn btn-dark m-2 p-2" href="#!" style="background-color: #8C3647; color:white"><i class="bi bi-person" style="font-size: 1rem;"></i> Inicia sesión o regístrate</a>
+              </li>
+              </ul>
+          </div>
+          </div>
+      </nav>
+
+      <!--Slide-md+----------------------------------------------------------------------------------------->
+      <section id="slide" class="d-none d-md-block bg-accent bg-position-center bg-size-cover py-3 py-sm-5" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/slider.jpg?updatedAt=1690821695236'); background-position: center; background-repeat: no-repeat; background-size:cover; max-height: 600px;">
+          <div class="row">
+              <div class="container py-5 col">
+              <div class="row pt-md-2 pb-lg-2 justify-content-center">
+                  <div class="col-xl-7 col-lg-8 col-md-10 text-start py-xl-3">
+                      <h6 class="text-light pb-sm-2">ANANDA CANDIDATOS</h6>
+                      <h1 class="text-light pb-sm-2">Busco trabajo</h1><span class="d-inline-block h5 text-light fw-light mx-2 opacity-70">Encuentra el empleo que mejor se ajuste a tu perfil e inscríbete. Te ayudamos a encontrar un trabajo en el que te sientas bien.</span>
+                      <div class="py-3 py-sm-3"><a class="btn btn-lg" style="background-color: #8C3647; color:white;font-weight: 500;" href="#!" data-scroll="">Ver ofertas<i class="bi bi-arrow-right"></i></a></div>
+                  </div>
+              </div>
+              </div>
+              <div class="container py-5 col">
+                  <div class="row pt-md-2 pb-lg-2 justify-content-center">
+                  <div class="col-xl-7 col-lg-8 col-md-10 text-end py-xl-3">
+                      <h6 class="text-light pb-sm-2">ANANDA EMPRESAS</h6>
+                      <h1 class="text-light pb-sm-2">Soy una empresa</h1><span class="d-inline-block h5 text-light fw-light mx-2 opacity-70">Tenemos las soluciones de Recursos Humanos que tu negocio necesita hoy, adaptadas a tu tamaño, sector y momento de actividad. Más de 500 empresas ya confían en Ananda.</span>
+                      <div class="py-3 py-sm-3"><a class="btn btn-lg" style="background-color: #8C3647; color:white;font-weight: 500;" href="#!" data-scroll="">Ananda empresas<i class="bi bi-arrow-right"></i></a></div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!--Slide-md----------------------------------------------------------------------------------------->
+      <section id="slide" class="d-block d-md-none bg-accent bg-position-center bg-size-cover py-3 py-sm-5" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/slider_mbl.jpg?updatedAt=1690821789023'); background-position: center; background-repeat: no-repeat; background-size:cover;">
+          <div class="row d-flex flex-column justify-content-around">
+              <div class="container p-5 col">
+                  <div class="row pt-md-2 pb-lg-2 justify-content-center">
+                      <div class="col-xl-7 col-lg-8 col-md-10 text-start py-xl-3">
+                          <h6 class="text-light pb-sm-2">ANANDA CANDIDATOS</h6>
+                          <h1 class="text-light pb-sm-2">Busco trabajo</h1><span class="d-inline-block h5 text-light fw-light mx-2 opacity-70">Encuentra el empleo que mejor se ajuste a tu perfil e inscríbete</span>
+                          <div class="py-3 py-sm-3"><a class="btn btn-lg" style="background-color: #8C3647; color:white;font-weight: 500;" href="#!" data-scroll="">Ver ofertas<i class="bi bi-arrow-right"></i></a></div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="container p-5 col">
+                      <div class="row pt-md-2 pb-lg-2 justify-content-center">
+                      <div class="col-xl-7 col-lg-8 col-md-10 text-end py-xl-3">
+                          <h6 class="text-light pb-sm-2">ANANDA EMPRESAS</h6>
+                          <h1 class="text-light pb-sm-2">Soy una empresa</h1><span class="d-inline-block h5 text-light fw-light mx-2 opacity-70"> Más de 500 empresas ya confían en Ananda</span>
+                          <div class="py-3 py-sm-3"><a class="btn btn-lg" style="background-color: #8C3647; color:white;font-weight: 500;" href="#!" data-scroll="">Ananda empresas<i class="bi bi-arrow-right"></i></a></div>
+                      </div>
+                      </div>
+                  </div>
+          </div>
+      </section>
+
+
+
+      <!--Abstract------------------------------------------------------------------------------------------>
+      <section id="ananda-abstract" class="p-3 p-sm-5">
+          <div class="container-fluid text-center">
+              <img class="my-2 mx-auto d-block" src="https://ik.imagekit.io/ehiyh7jvx/img/logo/logo_col.png?updatedAt=1690812562718" alt="" height="30">
+              <h1 class="mx-auto col-12 col-lg-8">30 años conectando talento con oportunidades laborales</h3>
+              <h4 class="mx-auto col-12 col-lg-8" style="font-weight: 400;">Ayudamos a las personas a encontrar un empleo en el que se sientan bien y apoyamos a las empresas a mejorar su competitividad a través del talento. Tenemos las soluciones de Recursos Humanos que tu negocio necesita hoy, adaptadas a tu tamaño, sector y momento de actividad.</h5>
+          </div>
+      </section>
+
+      <!--Info_1------------------------------------------------------------------------------------------>
+      <section id="info-1" class="py-3 py-sm-5 d-flex justify-content-center">
+          <div class="container-fluid row col-12 col-lg-10 d-flex justify-content-between">
+              
+
+              <div class="col-lg-6 col-12 text-lg-start text-center my-3">
+                  <h5 style="color:brown">OFICINAS</h5>
+                  <h5>Atención personalizada cerca de tí</h5>
+                  <p>Gracias a nuestra red de más de 50 oficinas en todo el territorio nacional, podemos brindarte una atención personal y completamente especializada. Contacta con los consultores/as de tu ciudad, ellos conocen perfectamente el mercado laboral de tu localidad y te ayudarán a encontrar el empleo que más se adapta a ti o las soluciones de RRHH que tu negocio necesita en estos momentos.</p>
+                  <div class="container-fluid mt-5">
+                      <img src="https://ik.imagekit.io/ehiyh7jvx/img/mapa.png?updatedAt=1690812555090" alt="" class="img-fluid my-5">
+                      <a href="#!" class="" style="text-decoration: none;"><h6 style="color:brown">Ver todas las oficinas <i class="bi bi-arrow-right"></i></h6></a>
+                  </div>
+              </div>
+            <div class="col-lg-6 col-12 text-lg-start text-center my-3">
+                  <h5 style="color:brown">SECTORES</h5>
+                  <h5>Especializados por áreas y sectores</h5>
+                  <p>Disponemos de consultores/as especializados en diferentes sectores estratégicos, así como en diferentes áreas laborales, que conocen perfectamente los diferentes convenios y casuísticas sectoriales. Nuestra especialización nos permite entender mejor tus necesidades, realizar una selección más precisa y adaptar nuestras soluciones a tu sector, incluso en los casos más complejos.</p>
+                  <div class="container-fluid row">
+                      <div class="col-12 col-lg-6">
+                          <table class="table table-hover">
+                              <tr><td><i class="bi bi-car-front" style="font-size: 3rem; color: lightgrey; vertical-align: middle;" ></i><span class="ms-3" style="font-weight: 300;">Automotive</span></td></tr>
+                              <tr><td><i class="bi bi-camera-reels" style="font-size: 3rem; color: lightgrey; vertical-align: middle;" ></i><span class="ms-3" style="font-weight: 300;">Audiovisual</span></td></tr>
+                              <tr><td><i class="bi bi-globe" style="font-size: 3rem; color: lightgrey; vertical-align: middle;" ></i><span class="ms-3" style="font-weight: 300;">TIC/Tecnología</span></td></tr>
+                              <tr><td><i class="bi bi-bank" style="font-size: 3rem; color: lightgrey; vertical-align: middle;" ></i><span class="ms-3" style="font-weight: 300;">Banca & Seguros</span></td></tr>
+                              <tr><td><i class="bi bi-headset" style="font-size: 3rem; color: lightgrey; vertical-align: middle;" ></i><span class="ms-3" style="font-weight: 300;">Contact Center</span></td></tr>
+                          </table>
+
+                      </div>
+                      <div class="col-12 col-lg-6">
+                          <table class="table table-hover">
+                              <tr><td><i class="bi bi-bandaid" style="font-size: 3rem; color: lightgrey; vertical-align: middle;" ></i><span class="ms-3" style="font-weight: 300;">Sanidad</span></td></tr>
+                              <tr><td><i class="bi bi-basket" style="font-size: 3rem; color: lightgrey; vertical-align: middle;" ></i><span class="ms-3" style="font-weight: 300;">Comercio</span></td></tr>
+                              <tr><td><i class="bi bi-briefcase" style="font-size: 3rem; color: lightgrey; vertical-align: middle;" ></i><span class="ms-3" style="font-weight: 300;">Ejecutivo</span></td></tr>
+                              <tr><td><i class="bi bi-bus-front" style="font-size: 3rem; color: lightgrey; vertical-align: middle;" ></i><span class="ms-3" style="font-weight: 300;">Transporte</span></td></tr>
+                              <tr><td><i class="bi bi-cup-hot" style="font-size: 3rem; color: lightgrey; vertical-align: middle;" ></i><span class="ms-3" style="font-weight: 300;">Hostelería</span></td></tr>
+                          </table>
+                      </div>
+                      <a href="#!" class="" style="text-decoration: none;"><h6 style="color:brown">Ver todos los sectores <i class="bi bi-arrow-right"></i></h6></a>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!--Candidato------------------------------------------------------------------------------------------>
+      <section id="candidato" class="py-3 py-sm-5 d-flex justify-content-center">
+          <div class="container-fluid row col-12 col-lg-10 d-flex justify-content-between">
+              <div class="col-12 col-lg-8">
+                  <h5 style="color:brown">CANDIDATO/A</h5>
+                  <div class="row my-3">
+                      <div class="col-12 col-lg-6">
+                          <i class="bi bi-journal-text" style="font-size: 3rem; color: brown;"></i>
+                          <h5>Te orientamos</h5>
+                          <p>Estamos cerca de ti para ayudarte a cumplir tu objetivo profesional. Acude a tu oficina más cercana y déjate asesorar por nuestros consultores/as especializados. Asesoría laboral GRATUITA para trabajadores y candidatos.</p>
+                          <a href="#!" class="" style="text-decoration: none;"><h6 style="color:brown">Saber más <i class="bi bi-arrow-right"></i></h6></a>
+                      </div>
+                      <div class="col-12 col-lg-6">
+                          <i class="bi bi-mortarboard" style="font-size: 3rem; color: brown;"></i>
+                          <h5>Te formamos</h5>
+                          <p>Te asesoramos y facilitamos el acceso a diferentes opciones de formación para que puedas desarrollarte personal y profesionalmente hacia tus objetivos laborales.</p>
+                          <a href="#!" class="" style="text-decoration: none;"><h6 style="color:brown">Infórmate ahora <i class="bi bi-arrow-right"></i></h6></a>
+                      </div>
+                  </div>
+                  <div class="row my-3">
+                      <div class="col-12 col-lg-6">
+                          <i class="bi bi-briefcase" style="font-size: 3rem; color: brown;"></i>
+                          <h5>Te escuchamos</h5>
+                          <p>Sólo tú puedes ayudarnos a mejorar.  Queremos conocer cómo te sientes y poder ayudarte. Puedes contactarnos en cualquiera de nuestras oficinas o a través del siguiente link para que, de manera anónima, podáis trasladarnos sugerencias y mejoras.</p>
+                          <a href="#!" class="" style="text-decoration: none;"><h6 style="color:brown">Contáctanos <i class="bi bi-arrow-right"></i></h6></a>
+                      </div>
+                      <div class="col-12 col-lg-6 " style="background-image: url('img/logo/logo_col_isotipo.png'); background-position: center; background-repeat: no-repeat; background-size: contain;">
+                          <div class="d-flex flex-column text-center justify-content-center" style="background-color: rgba(255, 255, 255, 0.8);width:100%;height: 100%;">
+                              <h3 class="m-2">+ de 50.000 personas</h3>
+                              <p class="m-2">han encontrado trabajo gracias a Ananda en 2022.</p>
+                              <a href="#!" class="m-2" style="text-decoration: none;"><h6 style="color:brown">Forma parte <i class="bi bi-arrow-right"></i></h6></a>
+                          
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-4 d-none d-lg-block h100" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/Recurso%201-80.jpg?updatedAt=1690823112293');background-position: top right; background-repeat: no-repeat;background-size: cover;">
+                  
+              </div>
+          </div>
+
+      </section>
+
+      <!--Testimonios-lg------------------------------------------------------------------------------------------>
+      <section id="testimonios" class="mt-5 py-3 py-sm-5 d-none d-lg-flex justify-content-center ">
+          <div class="row col-12 col-lg-10">
+              <h3 class="mb-5">Nos importan las personas. Nos importas tú: tu situación personal y tus objetivos.</h3>
+              <div class="col-12 col-lg-3 h-100">
+                  <div class="overflow-hidden h-100 d-flex flex-column justify-content-between" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/testimonial1-ok.jpg?updatedAt=1690825152142');background-size: cover; background-position:center; border-radius: 10px;">
+                      <div class="container-fluid d-flex flex-column justify-content-between p-3 h-100">
+                          <p class="text-light pt-3 d-none d-lg-block">Me ayudaron a encontrar mi primer empleo cuando llegué a España, a pesar de no tener experiencia previa. A mí me han abierto las puertas del mercado laboral.</p>
+                          <div class="border border-danger border-3 opacity-0 w-25  d-none d-lg-block" ></div>
+                          <p class="text-light  d-none d-lg-block" style="font-weight: 500;">Kyril Shamalov Budánov</p>
+                          <h5 class="text-light">Empleo que no requiere experiencia</h5>
+                      </div>
+                      <div class="w-100 p-3" style="background-color: #8C3647;">
+                          <a href="#!" class="text-center" style="text-decoration: none; "><p style="color:white; font-size: 1rem; font-weight: 500;">Ver estas ofertas <i class="bi bi-arrow-right"></i></p></a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="col-12 col-lg-3 h-100">
+                  <div class="rounded-3 overflow-hidden h-100 d-flex flex-column justify-content-between" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/testimonial2-ok.jpg?updatedAt=1690825151796');background-size: cover; background-position:center;  border-radius: 10px;">
+                      <div class="container-fluid d-flex flex-column justify-content-between p-3 h-100">
+                          <p class="text-light pt-3 d-none d-lg-block">Me han orientado y ayudado a conseguir un trabajo que es totalmente compatible con mi vida personal y mis estudios. Siento que Ananda se preocupa por los trabajadores.</p>
+                          <div class="border border-danger border-3 opacity-0 w-25  d-none d-lg-block" ></div>
+                          <p class="text-light  d-none d-lg-block" style="font-weight: 500;">Ana Pérez Ros</p>
+                          <h5 class="text-light">Empleo flexible o tiempo parcial</h5>
+                      </div>
+                      <div class="w-100 p-3" style="background-color: #8C3647;">
+                          <a href="#!" class="text-center" style="text-decoration: none; "><p style="color:white; font-size: 1rem; font-weight: 500;">Ver estas ofertas <i class="bi bi-arrow-right"></i></p></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12 col-lg-3 h-100">
+                  <div class="rounded-3 overflow-hidden h-100 d-flex flex-column justify-content-between" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/testimonial3-ok.jpg?updatedAt=1690825152165');background-size: cover; background-position:center;  border-radius: 10px;">
+                      <div class="container-fluid d-flex flex-column justify-content-between p-3 h-100">
+                          <p class="text-light pt-3 d-none d-lg-block">Me ayudaron a buscar un trabajo estable e indefinido, adecuado a mi perfil y mi nivel de estudios, donde he podido dar lo mejor de mí. Muy agradecido.</p>
+                          <div class="border border-danger border-3 opacity-0 w-25  d-none d-lg-block" ></div>
+                          <p class="text-light  d-none d-lg-block" style="font-weight: 500;">Álvaro Montoya Soler</p>
+                          <h5 class="text-light">Empleo con contrato indefinido</h5>
+                      </div>
+                      <div class="w-100 p-3" style="background-color: #8C3647;">
+                          <a href="#!" class="text-center" style="text-decoration: none; "><p style="color:white; font-size: 1rem; font-weight: 500;">Ver estas ofertas <i class="bi bi-arrow-right"></i></p></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12 col-lg-3 h-100">
+                  <div class="rounded-3 overflow-hidden h-100 d-flex flex-column justify-content-between" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/testimonial4-ok.jpg?updatedAt=1690825151941');background-size: cover; background-position:center;  border-radius: 10px;">
+                      <div class="container-fluid d-flex flex-column justify-content-between p-3 h-100">
+                          <p class="text-light pt-3 d-none d-lg-block">Pensé que, a mi edad, núnca podría recuperar mi carrera profesional. Por suerte, Ananda me ofreció una oportunidad de trabajar sin tener en cuenta mi edad, género o circunstancias.</p>
+                          <div class="border border-danger border-3 opacity-0 w-25  d-none d-lg-block" ></div>
+                          <p class="text-light  d-none d-lg-block" style="font-weight: 500;">Matilde LLoret Zúñiga</p>
+                          <h5 class="text-light">Reincorporación al mercado laboral</h5>
+                      </div>
+                      <div class="w-100 p-3" style="background-color: #8C3647;">
+                          <a href="#!" class="text-center" style="text-decoration: none; "><p style="color:white; font-size: 1rem; font-weight: 500;">Ver estas ofertas <i class="bi bi-arrow-right"></i></p></a>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </section>
+
+      <!--Testimonios-m------------------------------------------------------------------------------------------>
+      <section id="testimonios" class="mt-5 py-3 py-sm-5 d-flex justify-content-center d-lg-none">
+          <div class="row col-12 col-lg-10">
+              <h3 class="mb-5">Nos importa tu situación personal y objetivos</h3>
+              <div class="col-12 col-lg-3 m-2">
+                  <div class="rounded-3 overflow-hidden" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/testimonial1-mbl.jpg?updatedAt=1690825521641');background-size: cover; background-position:center; ">
+                      <div class="container-fluid d-flex flex-column justify-content-center p-5">
+                          
+                          <h5 class="text-light">Empleo que no requiere experiencia</h5>
+                      </div>
+                      <div class="w-100 p-3" style="background-color: #8C3647;">
+                          <a href="#!" class="text-center" style="text-decoration: none; "><p style="color:white; font-size: 1rem; font-weight: 500;">Ver estas ofertas <i class="bi bi-arrow-right"></i></p></a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="col-12 col-lg-3 m-2">
+                  <div class="rounded-3 overflow-hidden" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/testimonial2-mobile.jpg?updatedAt=1690825152008');background-size: cover; background-position:center; ">
+                      <div class="container-fluid d-flex flex-column justify-content-center p-5">
+                          
+                          <h5 class="text-light">Empleo flexible o tiempo parcial</h5>
+                      </div>
+                      <div class="w-100 p-3" style="background-color: #8C3647;">
+                          <a href="#!" class="text-center" style="text-decoration: none; "><p style="color:white; font-size: 1rem; font-weight: 500;">Ver estas ofertas <i class="bi bi-arrow-right"></i></p></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12 col-lg-3 m-2">
+                  <div class="rounded-3 overflow-hidden" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/testimonial3-mobile.jpg?updatedAt=1690825521683');background-size: cover; background-position:center; ">
+                      <div class="container-fluid d-flex flex-column justify-content-center p-5">
+                          
+                          <h5 class="text-light">Empleo con contrato indefinido</h5>
+                      </div>
+                      <div class="w-100 p-3" style="background-color: #8C3647;">
+                          <a href="#!" class="text-center" style="text-decoration: none; "><p style="color:white; font-size: 1rem; font-weight: 500;">Ver estas ofertas <i class="bi bi-arrow-right"></i></p></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12 col-lg-3 m-2">
+                  <div class="rounded-3 overflow-hidden" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/testimonial4-mobile.jpg?updatedAt=1690825521771');background-size: cover; background-position:center; ">
+                      <div class="container-fluid d-flex flex-column justify-content-center p-5">
+                          
+                          <h5 class="text-light">Reincorporación al mercado laboral</h5>
+                      </div>
+                      <div class="w-100 p-3" style="background-color: #8C3647;">
+                          <a href="#!" class="text-center" style="text-decoration: none; "><p style="color:white; font-size: 1rem; font-weight: 500;">Ver estas ofertas <i class="bi bi-arrow-right"></i></p></a>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </section>
+
+      <!--Empresas------------------------------------------------------------------------------------------>
+      <section id="empresas" class="py-3 py-sm-5 d-flex justify-content-center mt-5">
+          <div class="container-fluid row col-12 col-lg-10 d-flex justify-content-between">
+              <div class="col-12 col-lg-4 d-none d-lg-block h100" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/Recurso%202-80.jpg?updatedAt=1690823582035');background-position: top left; background-repeat: no-repeat;background-size: cover;">
+                  
+              </div>
+              <div class="col-12 col-lg-8">
+                  <h5 style="color:brown">EMPRESAS</h5>
+                  <h2>Soluciones de RRHH a medida para tu empresa, hoy mismo.</h2>
+                  <table class="table">
+                      <tr>
+                          <td>
+                              <div class="d-flex justify-content-center py-3">
+                                  <div class="d-none d-md-inline-flex px-5 justify-content-start">
+                                      <i class="bi bi-people" style="font-size: 3rem; color: #8C3647;"></i>
+                                  </div>
+                                  <div class="d-inline-flex flex-column justify-content-center">
+                                      <h5 style="color:#8C3647">ETT: Necesito un trabajador temporal para mañana.</h5>
+                                      <p>
+                                          Cuéntanos tus necesidades y nosotros nos encargamos del resto. ¿Necesitas cubrir una baja? ¿Tienes un pico de producción?... Buscamos al candidato que mejor se ajusta al perfil solicitado, lo contratamos, gestionamos el alta y los trámites burocráticos y te cedemos al trabajador en el menor tiempo posible y durante el tiempo que lo necesites para que tú puedas centrarte en hacer crecer tu negocio. Olvídate de absentismos, gestión de bajas o despidos.              </div>
+                                  <div class="d-none d-md-inline-flex flex-column justify-content-center">
+                                      <a href="#!" class="" style="text-decoration: none; color:#8C3647;font-size: 2rem;"><i class="bi bi-arrow-right"></i></a>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="d-flex justify-content-center py-3">
+                                  <div class="d-none d-md-inline-flex px-5 justify-content-start">
+                                      <i class="bi bi-pc-display" style="font-size: 3rem; color: #8C3647;"></i>
+                                  </div>
+                                  <div class="d-inline-flex flex-column justify-content-center">
+                                      <h5 style="color:#8C3647">Outsourcing: Necesito externalizar los recursos humanos de mi empresa. </h5>
+                                      <p>
+                                          Nos encargamos de diseñar la plantilla que necesitas, analizando los perfiles psicológicos que mejor se adaptan y más valor añadido aportan al equipo. Buscamos a los mejores profesionales para el proyecto concreto, los contratamos, formamos y gestionamos todos los trámites burocráticos relacionados con la gestión de RRHH, para que tú puedas dedicarte al core de tu negocio y simplemente pagar una factura. Te ayudamos a que puedas aprovechar todas las oportunidades cuando surgen, proporcionándote flexibilidad y recursos humanos cuando los necesitas.
+                                      </p>
+                                  </div>
+                                  <div class="d-none d-md-inline-flex flex-column justify-content-center">
+                                      <a href="#!" class="" style="text-decoration: none; color:#8C3647;font-size: 2rem;"><i class="bi bi-arrow-right"></i></a>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="d-flex justify-content-center py-3">
+                                  <div class="d-none d-md-inline-flex px-5 justify-content-start">
+                                      <i class="bi bi-check2-square" style="font-size: 3rem; color: #8C3647;"></i>
+                                  </div>
+                                  <div class="d-inline-flex flex-column justify-content-center">
+                                      <h5 style="color:#8C3647">Seleccion y evaluación de talento: Necesito contratar al profesional ideal.</h5>
+                                      <p>                                            
+                                          Si necesitas contratar a un trabajador pero no tienes el tiempo o los recursos necesarios para llevar a cabo un proceso de búsqueda y selección de talento. Nosotros te ayudamos. Cuéntanos tus necesidades y nuestros consultores especializados en RRHH y psicólogos se encargarán de buscar y valorar a los candidatos hasta encontrar el mejor profesional para tu compañía y equipo. Gracias a nuestro método de evaluación de candidatos, te presentaremos a la persona ideal; aquella que reúne el conocimiento, la experiencia y los valores que estás buscando.
+                                      </p>
+                                  </div>
+                                  <div class="d-none d-md-inline-flex flex-column justify-content-center">
+                                      <a href="#!" class="" style="text-decoration: none; color:#8C3647;font-size: 2rem;"><i class="bi bi-arrow-right"></i></a>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="d-flex justify-content-center py-3">
+                                  <div class="d-none d-md-inline-flex px-5 justify-content-start">
+                                      <i class="bi bi-book" style="font-size: 3rem; color: #8C3647;"></i>
+                                  </div>
+                                  <div class="d-inline-flex flex-column justify-content-center">
+                                      <h5 style="color:#8C3647">Formación</h5>
+                                      <p>                                             
+                                          Ayudamos a que las plantillas desarrollen su talento y mejoren sus habilidades
+                                          profesionales a través de la formación - upskilling y reskilling. Nuestras
+                                          soluciones
+                                          integrales de formación se adaptan a las necesidades de cada empresa, sea cual
+                                          sea su
+                                          tamaño o sector.
+                                      </p>
+                                  </div>
+                                  <div class="d-none d-md-inline-flex flex-column justify-content-center">
+                                      <a href="#!" class="" style="text-decoration: none; color:#8C3647;font-size: 2rem;"><i class="bi bi-arrow-right"></i></a>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <div class="d-flex justify-content-center py-3">
+                                  <div class="d-none d-md-inline-flex px-5 justify-content-start">
+                                      <i class="bi bi-chat-square-quote" style="font-size: 3rem; color: #8C3647;"></i>
+                                  </div>
+                                  <div class="d-inline-flex flex-column justify-content-center">
+                                      <h5 style="color:#8C3647">Consultoría</h5>
+                                      <p>                                                                                         
+                                          Acompañamos a las empresas en sus procesos de transformación y
+                                          gestión del cambio a
+                                          través de nuestra consultoría de Recursos Humanos. Aportamos soluciones
+                                          innovadoras para
+                                          que las organizaciones alcancen sus objetivos, incrementen su productividad y mejoren el
+                                          bienestar de sus plantillas.
+                                      </p>
+                                  </div>
+                                  <div class="d-none d-md-inline-flex flex-column justify-content-center">
+                                      <a href="#!" class="" style="text-decoration: none; color:#8C3647;font-size: 2rem;"><i class="bi bi-arrow-right"></i></a>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                  </table>
+                  
+              </div>
+              
+          </div>
+
+      </section>
+
+      <!--Banner Footer-lg------------------------------------------------------------------------------------------>
+      <section id="banner" class="justify-content-center py-5 d-none d-md-flex" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/CIERRE_FOOTER.jpg?updatedAt=1690826636249');background-position: center;background-repeat: no-repeat;background-size: cover; min-height: 350px;">
+          <div class="row d-flex flex-row justify-content-evenly col-10">
+              <div class="d-flex flex-column justify-content-center text-center col-6">
+                  <h1 class="text-light mb-5">¿Estas buscando trabajo?</h1>
+                  <a href="#!" style="text-decoration: none;" class="">
+                      <span class="p-2" style="background-color: #8C3647; border-radius: 10px; color: white;font-weight: 500;">Quiero trabajar</span>
+                  </a>    
+              </div>
+              <div class="d-flex flex-column justify-content-center text-center col-6">
+                  <h1 class="text-light mb-5">¿Eres una empresa que busca talento?</h1>
+                  <a href="#!" style="text-decoration: none;" class="">
+                      <span class="p-2" style="background-color: #8C3647; border-radius: 10px; color: white;font-weight: 500;">Quiero contratar</span>
+                  </a>    
+              </div>
+          </div>
+      </section>
+
+      <!--Banner Footer-sm------------------------------------------------------------------------------------------>
+      <section id="banner" class="d-flex justify-content-center py-5 d-md-none" style="background-image: url('https://ik.imagekit.io/ehiyh7jvx/img/CIERRE_FOOTER_MBL.jpg?updatedAt=1690826512125');background-position: center;background-repeat: no-repeat;background-size: cover; min-height: 600px;">
+          <div class="d-flex flex-column justify-content-around">
+              <div class="d-flex flex-column justify-content-center text-center col-12">
+                  <h1 class="text-light mb-5">¿Estas buscando trabajo?</h1>
+                  <a href="#!" style="text-decoration: none;" class="">
+                      <span class="p-2" style="background-color: #8C3647; border-radius: 10px; color: white;font-weight: 500;">Quiero trabajar</span>
+                  </a>    
+              </div>
+              <div class="d-flex flex-column justify-content-center text-center col-12">
+                  <h1 class="text-light mb-5">¿Eres una empresa que busca talento?</h1>
+                  <a href="#!" style="text-decoration: none;" class="">
+                      <span class="p-2" style="background-color: #8C3647; border-radius: 10px; color: white;font-weight: 500;">Quiero contratar</span>
+                  </a>    
+              </div>
+          </div>
+      </section>
+
+      <!--Footer------------------------------------------------------------------------------------------->
+      <section id="Footer" class="bg-dark text-light p-3">
+          <div class="row">
+              <div class="text-light col-12 col-md-4 col-lg-2 m-2">
+                  <h5>EMPLEO</h5>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a rel="noopener noreferrer" href="#!" target="_blank"  style="text-decoration: none; color:white">Descárgate nuestra
+                              app</a>
+                      </li>
+                      <li>
+                          <a rel="noopener noreferrer" href="#!" target="_blank"  style="text-decoration: none; color:white">Regístrate
+                              en Adecco</a>
+                      </li>
+                      <li>
+                          <a href="#!"  style="text-decoration: none; color:white">Encuentra trabajo</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Ofertas de empleo</a>
+                      </li>
+                      <li>
+                          <a rel="noopener noreferrer" href="#!" target="_blank" style="text-decoration: none; color:white">Blog
+                              de empleo</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Trabaja en Adecco</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Formadores Adecco</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Preguntas Frecuentes</a>
+                      </li>
+                  </ul>
+              </div>
+              <div  class="text-light col-12 col-md-4 col-lg-2  m-2">
+                  <h5>CIUDADES</h5>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Empleo en Madrid</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Empleo en Barcelona</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Empleo en Valencia</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Empleo en Sevilla</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Empleo en Bilbao</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Empleo en San Sebastián</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Empleo en Zaragoza</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Empleo en Las Palmas de Gran
+                              Canaria</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Empleo en A Coruña</a>
+                      </li>
+                  </ul>
+              </div>
+              <div  class="text-light col-12 col-md-4 col-lg-2  m-2">
+                  <h5>EMPRESAS</h5>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Trabajo temporal</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Outsourcing</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Reclutamiento y selección</a>
+                      </li>
+                      <a href="#!" style="text-decoration: none; color:white">Formación</a>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Consultoría</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Reforma Laboral</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Guía Salarial</a>
+                      </li>
+                  </ul>
+              </div>
+              <div  class="text-light col-12 col-md-4 col-lg-2  m-2">
+                  <h5>CONTACTO</h5>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Contacto Candidatos</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Contacto Empresas</a>
+                      </li>
+                      <li>
+                          <a href="#!" style="text-decoration: none; color:white">Localízanos</a>
+                      </li>
+                  </ul>
+              </div>
+              <div  class="text-light col-12 col-md-4 col-lg-2  m-2">
+                  <h5>REDES</h5>
+                  <a href="https://www.facebook.com/" class="linkrrss" name="Facebook" target="_blank" style="text-decoration: none; color:white">
+                      <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" class="linkrrss" name="Instagram" target="_blank" style="text-decoration: none; color:white">
+                      <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="https://twitter.com/" class="linkrrss" name="Twitter" target="_blank" style="text-decoration: none; color:white">
+                      <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/" class="linkrrss" name="Linkedin" target="_blank" style="text-decoration: none; color:white">
+                      <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="https://www.tiktok.com/" class="linkrrss" name="Tik Tok" target="_blank" style="text-decoration: none; color:white">
+                      <i class="bi bi-tiktok"></i>
+                  </a>
+              </div>
+          </div>
+      </section>
+
+</body>
+</html>
