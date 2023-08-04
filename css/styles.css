@@ -1,3 +1,58 @@
+:root {
+  --ananda-red: hwb(341 13% 42%);
+  --ananda-red-w10: hwb(341 23% 32%);
+  --ananda-red-w20: hwb(341 33% 22%);
+  --ananda-red-w30: hwb(341 43% 12%);
+  --ananda-red-w40: hwb(341 53% 2%);
+  --ananda-red-w50: hwb(341 63% 2%);
+  --ananda-red-b10: hwb(341 13% 52%);
+  --ananda-red-b20: hwb(341 3% 62%);
+  --ananda-red-b30: hwb(341 0% 72%);
+  --ananda-red-b40: hwb(341 0% 82%);
+  --ananda-red-b50: hwb(341 0% 92%);
+  --ananda-blue: hwb(196 0.8% 77.2%);
+  --ananda-blue-w10: hwb(196 10.8% 67.2%);
+  --ananda-blue-w20: hwb(196 20.8% 57.2%);
+  --ananda-blue-w30: hwb(196 30.8% 47.2%);
+  --ananda-blue-w40: hwb(196 40.8% 37.2%);
+  --ananda-blue-w50: hwb(196 50.8% 27.2%);
+  --ananda-blue-w60: hwb(196 60.8% 17.2%);
+  --ananda-blue-w70: hwb(196 70.8% 7.2%);
+  --ananda-blue-b10: hwb(196 0.8% 87.2%);
+  --ananda-blue-b20: hwb(196 0.8% 97.2%);
+  --ananda-yellow: hwb(61 19.1% 12.9%);
+  --ananda-yellow-w10: hwb(61 29.1% 2.9%);
+  --ananda-yellow-w20: hwb(61 39.1% 0%);
+  --ananda-yellow-w30: hwb(61 49.1% 0%);
+  --ananda-yellow-w40: hwb(61 59.1% 0%);
+  --ananda-yellow-w50: hwb(61 69.1% 0%);
+  --ananda-yellow-b10: hwb(61 9.1% 22.9%);
+  --ananda-yellow-b20: hwb(61 5.1% 32.9%);
+  --ananda-yellow-b30: hwb(61 0% 42.9%);
+  --ananda-yellow-b40: hwb(61 0% 52.9%);
+  --ananda-yellow-b50: hwb(61 0% 62.9%);
+  --ananda-green: hwb(146 25.5% 51.7%);
+  --ananda-green-w10: hwb(146 35.5% 41.7%);
+  --ananda-green-w20: hwb(146 45.5% 31.7%);
+  --ananda-green-w30: hwb(146 55.5% 21.7%);
+  --ananda-green-w40: hwb(146 65.5% 11.7%);
+  --ananda-green-w50: hwb(146 75.5% 1.7%);
+  --ananda-green-b10: hwb(146 15.5% 61.7%);
+  --ananda-green-b20: hwb(146 5.5% 71.7%);
+  --ananda-green-b30: hwb(146 0% 81.7%);
+  --ananda-green-b40: hwb(146 0% 91.7%);
+  --ananda-salmon: hwb(13.469 81% 0%);
+  --ananda-salmon-w10: hwb(13.469 91% 0%);
+  --ananda-salmon-w20: hwb(13.469 100% 0%);
+  --ananda-salmon-b10: hwb(13.469 71% 10%);
+  --ananda-salmon-b20: hwb(13.469 61% 20%);
+  --ananda-salmon-b30: hwb(13.469 51% 30%);
+  --ananda-salmon-b40: hwb(13.469 41% 40%);
+  --ananda-salmon-b50: hwb(13.469 31% 50%);
+  --ananda-salmon-b60: hwb(13.469 21% 60%);
+  --ananda-salmon-b70: hwb(13.469 11% 70%);
+}
+
 html {
   font-size: 0.9rem;
 }
