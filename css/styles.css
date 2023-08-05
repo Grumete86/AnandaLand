@@ -56,3 +56,13 @@
 html {
   font-size: 0.9rem;
 }
+
+.btn-outline-salmon {
+  color: var(--ananda-red);
+  border-color: var(--ananda-red);
+}
+.btn-outline-salmon:hover {
+  background-color: var(--ananda-red);
+  border-color: var(--ananda-red);
+  color: white;
+}
