@@ -1,18 +1,56 @@
-<div class="d-flex flex-row justify-content-center">
-    <div class="col-12 col-md-10">
-
-        <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <div class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</div>
-                <div class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</div>
-                <div class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</div>
+<div class="d-flex flex-column justify-content-between align-items-center mt-5">
+        <nav class=" col-12 col-md-10">
+            <div class="nav nav-tabs w-100" id="nav-tab" role="tablist">
+                <div class="flex-fill nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</div>
+                <div class="flex-fill nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</div>
+                <div class="flex-fill nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</div>
             </div>
         </nav>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-        </div>
 
-    </div>
+        <div class="tab-content w-100" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="d-flex flex-column justify-content-between pt-3 ">
+                    <form class="d-flex flex-column align-items-center my-5">
+                        <div class="col-12 col-md-10 py-3">
+                            <label for="perfil" class="h4" style="color:var(--ananda-blue-w20)">¿Qué perfil necesitas?</label>
+                            <input type="text" name="perfil" class="form-control" placeholder="Perfil" required/>
+                            <p class="p-0 m-0 text-muted">Por favor, indica el perfil que estás buscando</p>
+                        </div>
+                        <div class="col-12 col-md-10 py-3">
+                            <label for="numero" class="h4" style="color:var(--ananda-blue-w20)">¿Cuántos trabajadores necesitas?</label>
+                            <input type="number" min="1" step="1" name="numero" class="form-control" placeholder="1" required/>
+                            <p class="p-0 m-0 text-muted">Por favor, indica el número de trabajadores que estás buscando</p>
+                        </div>
+                        <div class="col-12 col-md-10 py-3">
+                            <label for="tiempo" class="h4" style="color:var(--ananda-blue-w20)">¿Durante cuanto tiempo los necesitas?</label>
+                            <select class="form-select" required>
+                                <option>Menos de 30 días</option>
+                                <option>Menos de 6 meses</option>
+                                <option>Indefinidamente</option>
+                            </select>
+                            <p class="p-0 m-0 text-muted">Por favor, indica el perfil que estás buscando</p>
+                        </div>
+                    </form>
+                    <div class="d-flex flex-row justify-content-center mt-5" style="background-color:var(--ananda-salmon)">
+                        <div class="d-flex flex-row justify-content-end col-12 col-md-10 p-3 gap-3">
+                            <button class="btn btn-light p-2 px-5">anterior</button>
+                            <button class="btn btn-primary p-2 px-5">siguiente</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                
+            </div>
+
+
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                
+            </div>
+
+
+        </div>
+    
 </div>
