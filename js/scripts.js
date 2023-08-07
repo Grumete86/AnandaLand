@@ -35,3 +35,13 @@ function includeHTML() {
     }
   }
 }
+
+$("#siguiente01").click(function () {
+  $("#nav-profile-tab").trigger("click");
+});
+$("#siguiente02").click(function () {
+  $("#nav-tab-03").trigger("click");
+});
+$("#siguiente03").click(function () {
+  $("#nav-tab-03").trigger("click");
+});
