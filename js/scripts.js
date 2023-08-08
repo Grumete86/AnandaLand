@@ -36,12 +36,18 @@ function includeHTML() {
   }
 }
 
-$("#siguiente01").click(function () {
-  $("#nav-profile-tab").trigger("click");
-});
-$("#siguiente02").click(function () {
-  $("#nav-tab-03").trigger("click");
-});
-$("#siguiente03").click(function () {
-  $("#nav-tab-03").trigger("click");
-});
+function rangeUpdate() {
+  let range = document.getElementById("customRange1");
+  setBubble(range, document.getElementById("bubble"));
+}
+
+function setBubble(range, bubble) {
+  const val = range.value;
+  const min = range.min ? range.min : 0;
+  const max = range.max ? range.max : 100;
+  const newVal = Number(((val - min) * 100) / (max - min));
+  bubble.innerHTML = val + " €";
+
+  // Sorta magic numbers based on size of the native UI thumb
+  bubble.style.left = newVal + "%";
+}

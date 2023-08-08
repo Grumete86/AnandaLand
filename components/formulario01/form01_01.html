@@ -1,56 +1,291 @@
 <div class="d-flex flex-column justify-content-between align-items-center mt-5">
-    <nav class=" col-12 col-md-10">
+    <!--Menú navegación pestañas------------------------------------------------------>
+    <nav class=" col-11 col-lg-6">
         <div class="nav nav-tabs w-100" id="nav-tab" role="tablist">
-            <div class="flex-fill nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</div>
-            <div class="flex-fill nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</div>
-            <div class="flex-fill nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</div>
+            <div class="flex-fill nav-link active" id="nav-necesito-tab" data-bs-toggle="tab" data-bs-target="#nav-necesito" type="button" role="tab" aria-controls="nav-necesito" aria-selected="true">1. Necesito</div>
+            <div class="flex-fill nav-link" id="nav-requisitos-tab" data-bs-toggle="tab" data-bs-target="#nav-requisitos" type="button" role="tab" aria-controls="nav-requisitos" aria-selected="false">2. Requisitos</div>
+            <div class="flex-fill nav-link" id="nav-propuesta-tab" data-bs-toggle="tab" data-bs-target="#nav-propuesta" type="button" role="tab" aria-controls="nav-propuesta" aria-selected="false">3. Propuesta</div>
         </div>
     </nav>
+    <!--Contenido pestañas------------------------------------------------------>
+    <form class="tab-content w-100" id="nav-tabContent" target="_blank" action="" method="">
+        <!--Contenido pestaña 1------------------------------------------------------>
+        <div class="tab-pane fade show active " id="nav-necesito" role="tabpanel" aria-labelledby="nav-necesito-tab">
+            <div class="d-flex flex-row justify-content-center" >
+                <div class="d-flex flex-column justify-content-between align-items-center pt-3 col-11 col-lg-6">
 
-    <div class="tab-content w-100" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <div class="d-flex flex-column justify-content-between pt-3 ">
-                <form class="d-flex flex-column align-items-center my-5">
-                    <div class="col-12 col-md-10 py-3">
-                        <label for="perfil" class="h4" style="color:var(--ananda-blue-w20)">¿Qué perfil necesitas?</label>
-                        <input type="text" name="perfil" class="form-control" placeholder="Perfil" required/>
-                        <p class="p-0 m-0 text-muted">Por favor, indica el perfil que estás buscando</p>
+                    <!--Input perfil---------------------------------------------------------->
+                    <div class="w-100 py-3 my-3">
+                        <label for="perfil" class="h2 my-3"  style="color:var(--ananda-red-b20)">¿Qué perfil necesitas?</label>
+                        <p class="p-0 my-3 lead">Indicanos qué perfil estás buscando.</p>
+                        <input type="text" name="perfil" class="form-control form-control-lg" placeholder="Perfil" style="background-color:var(--ananda-salmon-w10)" required/>
                     </div>
-                    <div class="col-12 col-md-10 py-3">
-                        <label for="numero" class="h4" style="color:var(--ananda-blue-w20)">¿Cuántos trabajadores necesitas?</label>
-                        <input type="number" min="1" step="1" name="numero" class="form-control" placeholder="1" required/>
-                        <p class="p-0 m-0 text-muted">Por favor, indica el número de trabajadores que estás buscando</p>
+
+
+                    <!--Select numero de trabajadores---------------------------------------------------------->
+                    <div class="w-100 py-3 my-3">
+                        <label for="numero" class="h2 my-3"  style="color:var(--ananda-red-b20)">¿Cuántos trabajadores necesitas?</label>
+                        <p class="p-0 my-3 lead">Selecciona el número de candidatos que quieres contratar.</p>
+                        <select name="numero" class="form-select form-select-lg" style="background-color:var(--ananda-salmon-w10)"  required>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>Mas de 5</option>
+                        </select>
                     </div>
-                    <div class="col-12 col-md-10 py-3">
-                        <label for="tiempo" class="h4" style="color:var(--ananda-blue-w20)">¿Durante cuanto tiempo los necesitas?</label>
-                        <select class="form-select" required>
+
+
+                    <!--Select tiempo de contrato---------------------------------------------------------->
+                    <div class="w-100 py-3 my-3">
+                        <label for="tiempo" class="h2 my-3"  style="color:var(--ananda-red-b20)">¿Durante cuanto tiempo los necesitas?</label>
+                        <select name="tiempo" class="form-select  form-select-lg" style="background-color:var(--ananda-salmon-w10)"  required>
                             <option>Menos de 30 días</option>
                             <option>Menos de 6 meses</option>
                             <option>Indefinidamente</option>
                         </select>
-                        <p class="p-0 m-0 text-muted">Por favor, indica el perfil que estás buscando</p>
+                        <button class="btn mt-3 mb-1 w-100 text-start d-flex flex-row justify-content-start align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mas01" aria-expanded="false" aria-controls="mas01">
+                            <div class="d-inline"><i class="bi bi-plus-circle align-middle ps-1 pe-5" style="font-size:1.5rem; color:var(--ananda-blue)"></i></div><span class="lead" style="color:var(--ananda-blue)">Añade más información</span>
+                          </button>
+                        <div class="collapse" id="mas01">
+                            <textarea name="tiempo-mas" placeholder="Añade más información..." class="form-control form-control-lg" rows="5"></textarea>
+                        </div>
                     </div>
-                </form>
-                <div class="d-flex flex-row justify-content-center mt-5" style="background-color:var(--ananda-salmon)">
-                    <div class="d-flex flex-row justify-content-end col-12 col-md-10 p-3 gap-3">
-                        <button class="btn btn-light p-2 px-5">anterior</button>
-                        <button class="btn btn-primary p-2 px-5" id=""sig>siguiente</button>
+
+
+                    <!--Input horario---------------------------------------------------------->
+                    <div class="w-100 py-3 mb-3">
+                        <label for="horario" class="h2 my-3" style="color:var(--ananda-red-b20)">¿En que horario?</label>
+                        <p class="p-0 my-3 lead">Selecciona la hora de entrada y salida de tu contratación.</p>
+                        <div class="d-flex flex-row">
+                            <input name="horario-start" type="time" class="form-control form-control-lg me-5" style="background-color:var(--ananda-salmon-w10)" value="08:00"/>
+                            <input name="horario-end" type="time" class="form-control ms-5" style="background-color:var(--ananda-salmon-w10)" value="17:00"/>
+                        </div>
+                        <p class="p-0 my-3 lead">Si quieres contratarlo en un tramo horario adicional puedes añadirlo en más información.</p>
+                        <button class="btn mt-3 mb-1 w-100 text-start d-flex flex-row justify-content-start align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#mas02" aria-expanded="false" aria-controls="mas02">
+                            <div class="d-inline"><i class="bi bi-plus-circle align-middle ps-1 pe-5" style="font-size:1.5rem; color:var(--ananda-blue)"></i></div><span class="lead" style="color:var(--ananda-blue)">Añade más información</span>
+                          </button>
+                        <div class="collapse" id="mas02">
+                            <textarea name="horario-mas" placeholder="Añade más información..." class="form-control form-control-lg" rows="5"></textarea>
+                        </div>
                     </div>
+
+
+                    <!--Input provincia---------------------------------------------------------->
+                    <div class="w-100 py-3 mb-3">
+                        <label for="horario" class="h2 my-3" style="color:var(--ananda-red-b20)">¿Donde?</label>
+                        <p class="p-0 my-3 lead">Selecciona la provincia y el municipio donde se desarrolla la actividad.</p>
+                        <select required name="provincia" class="form-select form-select-lg" style="background-color:var(--ananda-salmon-w10)">
+                            <option value="">Elige Provincia</option>
+                            <option value="Álava/Araba">Álava/Araba</option>
+                            <option value="Albacete">Albacete</option>
+                            <option value="Alicante">Alicante</option>
+                            <option value="Almería">Almería</option>
+                            <option value="Asturias">Asturias</option>
+                            <option value="Ávila">Ávila</option>
+                            <option value="Badajoz">Badajoz</option>
+                            <option value="Baleares">Baleares</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Burgos">Burgos</option>
+                            <option value="Cáceres">Cáceres</option>
+                            <option value="Cádiz">Cádiz</option>
+                            <option value="Cantabria">Cantabria</option>
+                            <option value="Castellón">Castellón</option>
+                            <option value="Ceuta">Ceuta</option>
+                            <option value="Ciudad Real">Ciudad Real</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Cuenca">Cuenca</option>
+                            <option value="Gerona/Girona">Gerona/Girona</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Guadalajara">Guadalajara</option>
+                            <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
+                            <option value="Huelva">Huelva</option>
+                            <option value="Huesca">Huesca</option>
+                            <option value="Jaén">Jaén</option>
+                            <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Las Palmas">Las Palmas</option>
+                            <option value="León">León</option>
+                            <option value="Lérida/Lleida">Lérida/Lleida</option>
+                            <option value="Lugo">Lugo</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Málaga">Málaga</option>
+                            <option value="Melilla">Melilla</option>
+                            <option value="Murcia">Murcia</option>
+                            <option value="Navarra">Navarra</option>
+                            <option value="Orense/Ourense">Orense/Ourense</option>
+                            <option value="Palencia">Palencia</option>
+                            <option value="Pontevedra">Pontevedra</option>
+                            <option value="Salamanca">Salamanca</option>
+                            <option value="Segovia">Segovia</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Soria">Soria</option>
+                            <option value="Tarragona">Tarragona</option>
+                            <option value="Tenerife">Tenerife</option>
+                            <option value="Teruel">Teruel</option>
+                            <option value="Toledo">Toledo</option>
+                            <option value="Valencia">Valencia</option>
+                            <option value="Valladolid">Valladolid</option>
+                            <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
+                            <option value="Zamora">Zamora</option>
+                            <option value="Zaragoza">Zaragoza</option>
+                          </select>
+                          <!--falta población dinámica o cargar por CP-->
+                        </div>
+
+
+                    <!--Input salario---------------------------------------------------------->
+                    <div class="w-100 py-3 my-3">
+                        <label for="salario" class="h2 my-3" style="color:var(--ananda-red-b20)">¿cuál es el salario aproximado que tendrá?</label>
+                        <p class="p-0 my-3 lead">Selecciona el salario aproximado (€/hora) que quieres que tenga tu contratación.</p>
+                        <output for="salario" class="m-n1 h2 position-relative" style="left:50%; color:var(--ananda-red-w10)" onforminput="value = salario.valueAsNumber;" id="bubble">14 €</output>
+                        <input type="range" class="form-range" id="customRange1" name="salario" min="8" max="20" step="0.25" value="14" oninput="rangeUpdate()">
+                        
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class=" h5 position-relative" style="transform:translateX(-50%);border-radius:50%;"> 8 €
+                            </div>
+                            <div class=" h5 position-relative" style="transform:translateX(50%);border-radius:50%"> 20 €
+                            </div>
+                        </div>
+                        <p class="fs-5" style="color:var(--ananda-red-w10)">El salario aquí indicado es siempre orientativo, el salario final se establecerá en función del convenio laboral en vigor (para dar estricto cumplimiento a la legalidad), y la demanda del mercado.</p>
+                    </div>
+
+                </div>
+            </div>
+            <!--Botones anterior-siguiente-->
+            <div class="d-flex flex-row justify-content-center mt-5 p-3" style="background-color:var(--ananda-salmon); box-shadow: 0 -5px 5px -5px #333">
+                <div class="d-flex flex-row justify-content-end col-11 col-lg-10 p-3 gap-3">
+                    <button type="button" class="btn btn-light p-2 px-5">anterior</button>
+                    <button type="button" class="btn btn-red p-2 px-5" id="siguiente01" onclick="javascript:document.getElementById('nav-requisitos-tab').click();">siguiente</button>
                 </div>
             </div>
         </div>
+                
+          
+
+        <!--Contenido pestaña 2------------------------------------------------------>
+            <div class="tab-pane fade "  id="nav-requisitos" role="tabpanel" aria-labelledby="nav-requisitos-tab">
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="d-flex flex-column justify-content-between align-items-center pt-3 col-11 col-lg-6">
+    
+                        <!---->
+                        <div class="w-100 py-3 my-3">
+                            <label for="experiencia" class="h2 my-3"  style="color:var(--ananda-red-b20)">¿qué experiencia necesita tu candidato?</label>
+                            <p class="p-0 my-3 lead">Indícanos la experiencia que debe tener tu candidato.</p>
+                            <select class="form-select form-select-lg" style="background-color:var(--ananda-salmon-w10)"  required>
+                                <option>sin experiencia</option>
+                                <option>1 - 3 años</option>
+                                <option>3 - 5 años</option>
+                                <option>Mas de 5 años</option>
+                            </select>
+                        </div>
+                        
+                        <div class="w-100 py-3 my-3">
+                            <label for="formacion" class="h2 my-3"  style="color:var(--ananda-red-b20)">¿necesita una formación específica?</label>
+                            <p class="p-0 my-3 lead">Indícanos si requiere algún nivel de formación.</p>
+                            <input type="radio" class="btn-check" name="formacion" id="formacion1" autocomplete="off">
+                            <label class="btn btn-outline-red  p-3 px-5" for="formacion1">no</label>
+
+                            <input type="radio" class="btn-check" name="formacion" id="formacion2" autocomplete="off">
+                            <label class="btn btn-outline-red p-3 px-5" for="formacion2">si</label>
+                        </div>
+
+                        <div class="w-100 py-3 my-3">
+                            <label for="idioma" class="h2 my-3"  style="color:var(--ananda-red-b20)">¿necesitas que sepa algún idioma?</label>
+                            <select class="form-select form-select-lg" name="idioma" style="background-color:var(--ananda-salmon-w10)"  required>
+                                <option>ninguno</option>
+                                <option>inglés</option>
+                                <option>francés</option>
+                                <option>alemán</option>
+                                <option>italiano</option>
+                                <option>chino</option>
+                                <option>árabe</option>
+                                <option>otros</option>
+                            </select>
+                        </div>
+
+                        <div class="w-100 py-3 my-3">
+                            <label for="conocimientos" class="h2 my-3"  style="color:var(--ananda-red-b20)">¿conocimientos?</label>
+                            <select class="form-select form-select-lg" name="conocimientos" style="background-color:var(--ananda-salmon-w10)"  required>
+                                <option>ninguno</option>
+                                <option>excel</option>
+                                <option>power point</option>
+                                <option>word</option>
+                                <option>contabilidad</option>
+                            </select>
+                        </div>
 
 
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="w-100 py-3 my-3">
+                            <label for="algo-mas" class="h2 my-3"  style="color:var(--ananda-red-b20)">¿algo más que contarnos?</label>
+                            <textarea class="form-control form-control-lg" name="algo-mas" style="background-color:var(--ananda-salmon-w10)" rows="8">cuéntanos...
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center mt-5 p-3" style="background-color:var(--ananda-salmon); box-shadow: 0 -5px 5px -5px #333">
+                    <div class="d-flex flex-row justify-content-end col-11 col-lg-10 p-3 gap-3">
+                        <button type="button" class="btn btn-light p-2 px-5" id="anterior02" onclick="javascript:document.getElementById('nav-necesito-tab').click();">anterior</button>
+                        <button type="button" class="btn btn-red p-2 px-5" id="siguiente02" onclick="javascript:document.getElementById('nav-propuesta-tab').click();">siguiente</button>
+                    </div>
+                </div>
+            </div>
             
+
+
+
+        <!--Contenido pestaña 3------------------------------------------------------>
+        <div class="tab-pane fade" id="nav-propuesta" role="tabpanel" aria-labelledby="nav-propuesta-tab">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="d-flex flex-column justify-content-between align-items-center pt-3 col-11 col-lg-6">
+                        
+                        <div class="w-100 py-3 mt-3">
+                            <p class="h2 my-3"  style="color:var(--ananda-red-b20)">¡ya casi hemos terminado!</p>
+                            <p class="p-0 my-3 lead">Necesitamos algún dato más sobre ti para facilitarte nuestra propuesta.</p>
+                        </div>
+                        
+                        <div class="w-100 py-3 my-3">
+                            <label for="nombre" class="p-0 my-1">Nombre y apellidos</label>
+                            <input type="text" name="nombre" class="form-control form-control-lg" style="background-color:var(--ananda-salmon-w10)" required/>
+                        </div>
+
+                        <div class="w-100 py-3 my-3">
+                            <label for="compania" class="p-0 my-1">Compañía</label>
+                            <input type="text" name="compania" class="form-control form-control-lg" style="background-color:var(--ananda-salmon-w10)" required/>
+                        </div>
+
+                        <div class="w-100 py-3 my-3">
+                            <label for="cif" class="p-0 my-1">CIF</label>
+                            <input type="text" name="cif" class="form-control form-control-lg" style="background-color:var(--ananda-salmon-w10)" required/>
+                        </div>
+
+                        <div class="w-100 py-3 my-3">
+                            <label for="mail" class="p-0 my-1">Email</label>
+                            <input type="mail" name="mail" class="form-control form-control-lg" style="background-color:var(--ananda-salmon-w10)" required/>
+                        </div>
+
+                        <div class="w-100 py-3 my-3">
+                            <label for="telefono" class="p-0 my-1">Teléfono</label>
+                            <input type="phone" name="telefono" class="form-control form-control-lg" style="background-color:var(--ananda-salmon-w10)" required/>
+                        </div>
+
+                        <div class="w-100 py-3 my-3 form-check">
+                            <input class="form-check-input p-2" type="checkbox" value="" id="tratamiento">
+                            <span class="form-check-label lead p-2" for="tratamiento">
+                                Acepto el tratamiento de mis datos personales conforme a las condiciones establecidas en la <a href="#!" style="text-decoration:none;color:var(--ananda-red)">política de privacidad para formularios de Ananda.</a>
+                            </span>
+                        </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center mt-5 p-3" style="background-color:var(--ananda-salmon); box-shadow: 0 -5px 5px -5px #333">
+                <div class="d-flex flex-row justify-content-end col-11 col-lg-10 p-3 gap-3">
+                    <button type="button" class="btn btn-light p-2 px-5" id="anterior03" onclick="javascript:document.getElementById('nav-requisitos-tab').click();">anterior</button>
+                    <button type="submit" class="btn btn-red p-2 px-5" id="siguiente03" onclick="window.location.href = 'https://x6gsjx-5000.csb.app/public/presupuesto-formulario02.html';">siguiente</button>
+                </div>
+            </div>
         </div>
-
-
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-            
-        </div>
-
-
-    </div>
+    </form>
 
 </div>
+
