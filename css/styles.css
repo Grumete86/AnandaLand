@@ -165,10 +165,14 @@ html {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem var(--ananda-red);
+  box-shadow:
+    0 0 0 1px #fff,
+    0 0 0 0.25rem var(--ananda-red);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem var(--ananda-red);
+  box-shadow:
+    0 0 0 1px #fff,
+    0 0 0 0.25rem var(--ananda-red);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -180,9 +184,13 @@ html {
   background-color: var(--ananda-red);
   border: 0;
   border-radius: 1rem;
-  -webkit-transition: background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+  -webkit-transition:
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  transition:
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
   appearance: none;
@@ -211,9 +219,13 @@ html {
   background-color: var(--ananda-red);
   border: 0;
   border-radius: 1rem;
-  -moz-transition: background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+  -moz-transition:
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  transition:
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
   appearance: none;
@@ -405,4 +417,18 @@ input[type="checkbox"] {
 .navbar-dark .navbar-text a:focus,
 .navbar-dark .navbar-text a:hover {
   color: #fff;
+}
+.text-responsive {
+  font-size: calc(1.575rem + 3.9vw);
+}
+@media (min-width: 992px) {
+  .text-lg-start {
+    text-align: left !important;
+  }
+}
+.min-vh-50 {
+  min-height: 50vh !important;
+}
+.min-vh-75 {
+  min-height: 75vh !important;
 }
